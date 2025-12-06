@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0d0d0d;
+      color: #f4f4f4;
+      text-align: center;
+    }
+
+    header {
+      background: linear-gradient(90deg, #00ffff, #8000ff);
+      padding: 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: white;
+    }
+
+    h1 {
+      margin-top: 50px;
+      font-size: 2.5em;
+      background: linear-gradient(90deg, #ff00ff, #00ffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      color: #cccccc;
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+
+    .contact-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #1a1a1a;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background-color: #2a2a2a;
+      color: #fff;
+      font-size: 1em;
+    }
+
+    input:focus, textarea:focus {
+      outline: 2px solid #00ffff;
+    }
+
+    button {
+      background: linear-gradient(90deg, #8000ff, #00ffff);
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 25px;
+      font-size: 1.1em;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #00ffff, #8000ff);
+    }
+
+    .social-links {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      color: #00ffff;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #ff00ff;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      background-color: #111;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Contact Me</header>
+
+  <h1>Let's Connect!</h1>
+  <p>Have a project, collaboration idea, or just want to say hello?  
+     Feel free to drop me a message below 👇</p>
+
+  <div class="contact-container">
+    <form action="https://formspree.io/f/your_form_id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <div class="social-links">
+    <a href="mailto:youremail@example.com">📧 Email</a>
+    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">💼 LinkedIn</a>
+    <a href="https://github.com/yourusername" target="_blank">💻 GitHub</a>
+    <a href="https://twitter.com/yourusername" target="_blank">🐦 Twitter</a>
+  </div>
+
+  <footer>
+    <p>© 2025 Your Name | Designed with ❤️ and HTML + CSS</p>
+  </footer>
+
+</body>
+</html>
